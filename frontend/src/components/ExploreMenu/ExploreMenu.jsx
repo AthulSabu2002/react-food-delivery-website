@@ -4,7 +4,7 @@ import './ExploreMenu.css'
 const ExploreMenu = () => {
     return (
         <div>
-
+Explore menu
         </div>
     )
 }
