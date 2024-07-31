@@ -18,7 +18,7 @@ FoodExpress is a modern, responsive web application for online food ordering and
 - Backend: Node.js, Express.js
 - Database: MongoDB
 - Payment: Stripe API
-- Styling: [Your choice of CSS framework, e.g., Tailwind CSS, styled-components]
+- Styling: CSS
 
 ## Getting Started
 
@@ -32,8 +32,8 @@ FoodExpress is a modern, responsive web application for online food ordering and
 
 1. Clone the repository:
    ```
-   git clone https://github.com/your-username/foodexpress.git
-   cd foodexpress
+   https://github.com/AthulSabu2002/react-food-delivery-website.git
+   cd react-food-delivery-website
    ```
 
 2. Install dependencies:
@@ -53,7 +53,7 @@ FoodExpress is a modern, responsive web application for online food ordering and
    npm run dev
    ```
 
-5. Open your browser and navigate to `http://localhost:5173` to view the application.
+5. Open your browser and navigate to `http://localhost:5000` to view the application.
 
 ## Contributing
 
