@@ -1,10 +1,11 @@
 .header {
   height: 34vw;
   margin: 30px auto;
-  background: url("/header_img.png");
+  background: url("/header_img.png") no-repeat center center;
+  background-size: cover;
   position: relative;
-  background-size: contain;
 }
+
 
 .header-contents {
   position: absolute;
@@ -37,4 +38,29 @@
     background-color: white;
     font-size: max(1vw, 13px);
     border-radius: 50px;
+}
+
+
+@media (max-width: 1050px){
+  .header{
+    height: 38vw;
+  }
+
+  .header-contents{
+    max-width: 45%;
+  }
+}
+
+@media (max-width: 750){
+  .header-contents{
+    max-width: 55%;
+  }
+
+  .header-contents p{
+    display: none;
+  }
+
+  .header-contents button{
+    padding: 2vw, 4vw;
+  }
 }

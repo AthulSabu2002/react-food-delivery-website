@@ -1,27 +1,24 @@
-// eslint-disable-next-line no-unused-vars
-import React, { useEffect, useState } from "react";
-import { createContext } from "react";
+/* eslint-disable no-unused-vars */
+import React, { useEffect, useState, createContext } from "react";
 import PropTypes from "prop-types";
 import { food_list } from "../assets/assets";
 
 export const StoreContext = createContext(null);
 
-const StoreContextProvider = (props) => {
+const StoreContextProvider = ({ children }) => {
     const [cartItems, setCartItems] = useState({});
 
     const addToCart = (itemId) => {
-        if (!cartItems[itemId]) {
-            setCartItems((prev) => ({ ...prev, [itemId]: 1 }));
-        } else {
-            setCartItems((prev) => ({ ...prev, [itemId]: prev[itemId] + 1 }));
-        }
+        setCartItems((prev) => ({
+            ...prev,
+            [itemId]: (prev[itemId] || 0) + 1
+        }));
     };
 
     const removeFromCart = (itemId) => {
         setCartItems((prev) => {
-            const newCount = prev[itemId] - 1;
+            const newCount = (prev[itemId] || 0) - 1;
             if (newCount <= 0) {
-                // eslint-disable-next-line no-unused-vars
                 const { [itemId]: _, ...rest } = prev;
                 return rest;
             }
@@ -30,20 +27,19 @@ const StoreContextProvider = (props) => {
     };
 
     useEffect(() => {
-        console.log(cartItems);
+        console.log("cartItems:", cartItems);
     }, [cartItems]);
 
     const contextValue = {
         food_list,
         cartItems,
-        setCartItems,
         addToCart,
         removeFromCart,
     };
 
     return (
         <StoreContext.Provider value={contextValue}>
-            {props.children}
+            {children}
         </StoreContext.Provider>
     );
 };
