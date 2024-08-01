@@ -32,25 +32,33 @@ FoodExpress is a modern, responsive web application for online food ordering and
 
 1. Clone the repository:
    ```
-   https://github.com/AthulSabu2002/react-food-delivery-website.git
+
+   <https://github.com/AthulSabu2002/react-food-delivery-website.git>
    cd react-food-delivery-website
+
    ```
 
 2. Install dependencies:
    ```
+
    npm install
+
    ```
 
 3. Set up environment variables:
    Create a `.env` file in the root directory and add the following:
    ```
+
    MONGODB_URI=your_mongodb_connection_string
    STRIPE_SECRET_KEY=your_stripe_secret_key
+
    ```
 
 4. Start the development server:
    ```
+
    npm run dev
+
    ```
 
 5. Open your browser and navigate to `http://localhost:5000` to view the application.
