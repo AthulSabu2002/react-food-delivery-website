@@ -32,10 +32,9 @@ FoodExpress is a modern, responsive web application for online food ordering and
 
 1. Clone the repository:
    ```
-
-   <https://github.com/AthulSabu2002/react-food-delivery-website.git>
+   https://github.com/AthulSabu2002/react-food-delivery-website.git
+   <br>
    cd react-food-delivery-website
-
    ```
 
 2. Install dependencies:
