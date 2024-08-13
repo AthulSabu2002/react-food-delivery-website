@@ -4,6 +4,8 @@ import validator from "validator";
 import userModel from "../models/userModel.js";
 
 const loginUser = async(req, res) => {
+
+    console.log(req.body);
     const {email, password} = req.body;
 
     try {
@@ -36,6 +38,7 @@ const createToken = (id) => {
 
 
 const registerUser = async(req, res) => {
+    console.log("register", req.body);
     const {name, password, email} = req.body;
 
     try {
