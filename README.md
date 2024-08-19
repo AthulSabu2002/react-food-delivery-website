@@ -1,7 +1,7 @@
 ```markdown
 # Tomato - Online Food Delivery Platform
 
-FoodExpress is a modern, responsive web application for online food ordering and delivery. Built with React and Vite for the frontend, Node.js and MongoDB for the backend, and integrated with Stripe for secure payments.
+Tomato is a modern, responsive web application for online food ordering and delivery. Built with React and Vite for the frontend, Node.js and MongoDB for the backend, and integrated with Stripe for secure payments.
 
 ## Features
 
